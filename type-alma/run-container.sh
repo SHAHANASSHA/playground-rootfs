@@ -9,7 +9,7 @@ cont_id=$(docker run -td --rm  --privileged -v $1:/rootfs.ext4 almalinux)
 # docker exec -t "$cont_id" /bin/bash -c "dnf update -y && DEBIAN_FRONTEND='noninteractive' dnf install -y systemd"
 docker exec -t "$cont_id" /bin/bash -c "dnf update -y && dnf install -y systemd"
 
-
+ 
 # Restart the container
 docker commit "$cont_id" "temp-build-alma"
 docker stop "$cont_id"
