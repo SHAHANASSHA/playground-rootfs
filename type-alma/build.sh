@@ -24,6 +24,8 @@ Usage: $0 [-t]
 "
 }
 
+
+
 SPARSE=1 # 1 if creating sparse file, 0 if not
 
 while getopts "h?s" opt; do
