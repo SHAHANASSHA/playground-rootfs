@@ -23,7 +23,7 @@ Usage: $0 [-t]
     -s don't generate a sparse file
 "
 }
-
+ 
 
 
 SPARSE=1 # 1 if creating sparse file, 0 if not
